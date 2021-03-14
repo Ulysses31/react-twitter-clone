@@ -1,0 +1,96 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+
+.post__header {
+  max-width: 600px;
+}
+
+.post__headerText > h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.post__headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post__channel {
+  font-size: 12px;
+  color: gray;
+}
+
+.post__body {
+  flex: 1;
+  padding: 10px;
+}
+
+.post__body > img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.post__badge {
+  color: var(--twitter-color);
+  font-size: 14px;
+}
+
+.post__avatar {
+  padding: 10px;
+}
+
+/* Portrait */
+@media only screen and (max-width: 414px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post__headerDescription {
+    font-size: 12px;
+  }
+
+  .post__body > img {
+    width: 100%;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 568px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post__headerDescription {
+    font-size: 12px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .post__body > img {
+    width: 100%;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .post__body > img {
+    width: 100%;
+  }
+}
